@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>text-decoration</title>
+  <style>
+   .mod { 
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: lightblue;
+    color: lightblue;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+   }
+      .mod_none{
+         color: lightblue; 
+      }
+    .mod1 { 
+    text-decoration:underline;
+    text-decoration-style: solid;
+    text-decoration-color: lightgreen;
+    color: lightgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   } 
+    .mod_1{
+          color: lightgreen;
+      }
+    .mod2 { 
+    text-decoration: line-through; 
+    text-decoration-style: double;
+    text-decoration-color: purple;
+    color: purple;
+   }
+    .mod_2{
+       color: purple;
+      }
+    .mod3 { 
+    text-decoration: underline; 
+    text-decoration-style: dashed;
+    text-decoration-color: cyan;
+    color: cyan;
+   }
+    .mod_3{
+          color: cyan;
+      }
+  </style> 
+ </head> 
+ <body>
+     <ol type="I">
+   <font class="mod_none"><li><strong>А</strong></li></font>
+    <ul> <font class="mod"><li>Грабли</li></font>
+    </ul>
+<li class="mod_1"><strong>Б</strong></li>
+         <ul>
+   <font class="mod1"><li>Лопата</li></font>
+    </ul>
+<li class="mod_2"><strong>В</strong></li>
+         <ul>
+    <font class="mod2"><li>Тачка</li></font>
+    </ul>
+<li class="mod_3"><strong>Г</strong></li>
+         <ul>
+        <font class="mod3"><li><em>Сикатор</em></li></font>
+    </ul>
+</ol>
+ </body>
+</html>

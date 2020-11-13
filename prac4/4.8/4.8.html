@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег DIV</title>
+  <style type="text/css">
+   .block1 { 
+    width: 100px;
+    height: 250px; /*square*/
+    background: purple;
+    padding: 5px;
+    padding-right: 5px; 
+    display: block;
+  position: absolute;
+  left: 50;
+  top: 25%;
+   }
+      .block1:hover {
+          transform: rotate(15deg);
+      }
+   .block2 { 
+    width: 225px; 
+    height: 175px; /*square*/
+    background: lightgreen; 
+    padding: 5px; 
+    display: block;
+  position: absolute;
+  left: 220px;
+  top: 50%;
+   }
+      .block2:hover {
+       transform: scale(2);
+      }
+             .block3 { 
+    width: 200px; 
+    height: 250px; /*square*/
+    background: orange; 
+    padding: 5px; 
+    display: block;
+  position: absolute;
+  left: 440px;
+  top: 10%;
+   }
+      .block3:hover {
+          transform: scaleX(2);
+          }
+                   .block4 { 
+    width: 230px; 
+    height: 150px; /*square*/
+    background: lightblue; 
+    padding: 5px; 
+    display: block;
+  position: absolute;
+  left: 460px;
+  top: 50%;
+   }
+      .block4:hover {
+          transform: scaleY(2);
+          }
+                   .block5 { 
+    width: 75px; 
+    height: 75px; /*square*/
+    background: white; 
+    padding: 5px; 
+    border: solid 1px black; 
+   display: block;
+  position: absolute;
+  left: 680px;
+  top: 25%;
+   }
+      .block5:hover {
+         transform: translate(15px,15px);
+          }
+  </style> 
+ </head>
+ <body>
+<div class="block1">Проверка работы rotate.</div> 
+<div class="block2">Проверка работы scale2.</div>
+<div class="block3">Проверка работы scaleX</div> 
+<div class="block4">Проверка работы scaleY</div> 
+<div class="block5">Проверка работы translate 5</div> 
+ </body>
+</html>
