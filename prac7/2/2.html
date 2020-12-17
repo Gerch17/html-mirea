@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="f">Hello</p>
+	<button onclick="F()">Нажми на меня </button>
+	<button onclick="FF()">Изменение изображения </button>
+	<img style="width="80px"; height="80px""  src="2.jpg" id="ff">
+		<script type="text/javascript">
+			function F(){
+				document.getElementById("f").innerHTML = "world";
+			}
+			function FF(){
+				var a =document.getElementById("ff");
+				a.src = "22.png";
+			}
+		</script>
+	</button>
+</body>
+</html>	

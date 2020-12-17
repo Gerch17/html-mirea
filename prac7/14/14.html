@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      #contents {
+        padding: 5px;
+        border: 1px black solid;
+		margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset id="contents">
+      <legend>#contents</legend>
+      <p>
+        Перейти по этой 
+        <a href="http://vk.com">ссылке</a> не так 
+        <a href="http://youtube.com">просто</a>
+      </p>
+    </fieldset>
+
+    <script>
+      contents.onclick = function (event) {
+        function handleLink(href) {
+          let isLeaving = confirm(`Leave for ${href}?`);
+          if (!isLeaving) return false;
+        }
+
+        let target = event.target.closest('a');
+
+        if (target && contents.contains(target)) {
+          return handleLink(target.getAttribute('href'));
+        }
+      };
+    </script>
+  </body>
+</html>

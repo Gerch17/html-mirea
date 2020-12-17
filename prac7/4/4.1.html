@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>741</title>
+	<style>
+		input {
+			width: 100px;
+		}
+	</style>
+	<script>
+		function go(){
+			elem = document.getElementById('test');
+			elem.value = 'Текст был изменен';
+			elem.style.width = '150px';
+			elem.style.height = '100px';
+			elem.style.color = 'blue';
+			elem.style.borderRadius = '20px';
+		}
+	</script>
+</head>
+<body style="height: 150px;">
+	<input type="text" value="text" id="test"> <br><br>
+	<button onclick="go()">push</button>
+</body>
+</html>

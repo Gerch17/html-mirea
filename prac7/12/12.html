@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    .tree span:hover {
+      font-weight: bold;
+    }
+    .tree span {
+      cursor: pointer;
+    }
+  </style>
+  <meta charset="utf-8">
+</head>
+<body>
+  <ul class="tree" id="tree">
+    <li>Игры
+      <ul>
+        <li>Steam
+          <ul>
+            <li>DOTA 2</li>
+            <li>CS:GO</li>
+            <li>Tropico 5</li>
+            <li>CyberPunk 2077</li>
+          </ul>
+        </li>
+        <li>Origin
+          <ul>
+            <li>BattleField 4</li>
+            <li>BattleField 3</li>
+            <li>BattleField HardLine</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  <script>
+    for (let li of tree.querySelectorAll('li')) {
+      let span = document.createElement('span');
+      li.prepend(span);
+      span.append(span.nextSibling); }
+    tree.onclick = function(event) {
+      if (event.target.tagName != 'SPAN') {
+        return;
+      }
+      let childrenContainer = event.target.parentNode.querySelector('ul');
+      if (!childrenContainer) return; 
+      childrenContainer.hidden = !childrenContainer.hidden;
+    }
+  </script>
+</body>
+</html>
